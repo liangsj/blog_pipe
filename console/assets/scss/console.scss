@@ -1,0 +1,58 @@
+.console {
+  background-color: $blue-lighter;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px 0;
+  box-sizing: border-box;
+
+  .card {
+    width: 650px;
+    margin: 0 auto;
+    z-index: 1;
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login {
+  &__content {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  &__icon .icon {
+    border-radius: 10px !important;
+    fill: currentColor;
+    stroke-width: 0;
+    stroke: currentColor;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin: 20px auto;
+    display: block;
+    color: #3b3e43;
+    transition: $transition;
+    padding-right: 46px;
+
+    &:hover {
+     transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .console {
+    padding: 15px
+  }
+}
+
